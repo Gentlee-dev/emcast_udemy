@@ -16,7 +16,7 @@ const Index = () => {
         {COURSELIST.map((course: Course) => {
           return (
             <li key={course.title} className="py-16 relative">
-              <Link href={`/course/${course.idx}`}>
+              <Link href={``}>
                 <section className="flex">
                   <img
                     className="w-260 mr-16"
