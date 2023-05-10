@@ -1,0 +1,280 @@
+import { Course } from "../interface";
+
+const COURSELIST: Course[] = [
+  {
+    idx: 1,
+    title:
+      "【한글자막】 Python 부트캠프 : 100개의 프로젝트로 Python 개발 완전 정복",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4367336_0573_7.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "전세계 10만명이 넘게 수강한 Python 수업! 데이터사이언스, 웹 개발, 크롤링, GUI 프로그래밍, 게임 등 Python을 통해 개발할 수 있는 모든 것을 다뤄보는 All-in-one 코스",
+    visible_instructors: ["Dr. Angela Yu", "웅진씽크빅 글로벌"],
+    rating: 4.7,
+    num_reviews: 1588,
+    content_info: "총 64.5시간",
+    num_published_lectures: 675,
+    instructional_level: "모든 수준",
+    badge_text: "Bestseller",
+  },
+  {
+    idx: 2,
+    title: "【한글자막】 React 완벽 가이드 with Redux, Next.js, TypeScript",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4298905_17e3_2.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "Javascript부터 웹 어플리케이션 배포까지, React와 프론트엔드 최신 기술을 가장 쉽고 확실하게 배우는 법",
+    visible_instructors: [
+      "Academind by Maximilian Schwarzmüller",
+      "Maximilian Schwarzmüller",
+      "웅진씽크빅 글로벌",
+    ],
+    rating: 4.7,
+    num_reviews: 1554,
+    content_info: "총 49시간",
+    num_published_lectures: 523,
+    instructional_level: "초급자 수준",
+  },
+  {
+    idx: 3,
+    title: "【한글자막】 The Web Developer 부트캠프 2023",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4297574_42d1_4.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "전세계 25만명이 선택한 유데미 베스트셀러! HTML, CSS, JavaScript, Node.js 등을 활용한 13개 이상의 프로젝트로 확실하게 웹 개발 입문 완성",
+    visible_instructors: ["Colt Steele", "웅진씽크빅 글로벌"],
+    rating: 4.8,
+    num_reviews: 1322,
+    content_info: "총 63.5시간",
+    num_published_lectures: 613,
+    instructional_level: "모든 수준",
+  },
+  {
+    idx: 4,
+    title: "retr0의 유니티 (Unity C#) 게임 프로그래밍 에센스",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/1341186_804d_15.jpg",
+    price: 88000,
+    real_price: null,
+    headline: "간결하고 탁월한 유니티 게임 프로그래밍 튜토리얼",
+    visible_instructors: ["retr0 by I_Jemin"],
+    rating: 4.7,
+    num_reviews: 977,
+    content_info: "총 24시간",
+    num_published_lectures: 169,
+    instructional_level: "모든 수준",
+  },
+  {
+    idx: 5,
+    title: "【한글자막】 JavaScript 알고리즘 & 자료구조 마스터클래스",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4305113_68d5_4.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "정렬, 리스트, 힙 스택을 포함한 12개의 알고리즘과 10개 이상 자료구조 학습으로 기술 면접 완벽하게 대비!",
+    visible_instructors: ["Colt Steele", "웅진씽크빅 글로벌"],
+    rating: 4.6,
+    num_reviews: 677,
+    content_info: "총 22시간",
+    num_published_lectures: 249,
+    instructional_level: "모든 수준",
+  },
+  {
+    idx: 6,
+    title: "C++ 언매니지드 프로그래밍",
+    image_240x135: "https://img-c.udemycdn.com/course/240x135/2003154_8191.jpg",
+    price: 219000,
+    real_price: null,
+    headline: "실제 업계에서 쓰이는 C++ 프로그래밍의 기본기",
+    visible_instructors: ["Pope Kim"],
+    rating: 4.5,
+    num_reviews: 633,
+    content_info: "총 25.5시간",
+    num_published_lectures: 237,
+    instructional_level: "중급자 수준",
+  },
+  {
+    idx: 7,
+    title: "【한글자막】 Docker & Kubernetes : 실전 가이드",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4482288_58fb_3.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "Docker, Docker Compose, 다중 컨테이너 프로젝트, Deployment 및 Kubernetes에 대한 모든 것을 기초부터 배워보세요!",
+    visible_instructors: [
+      "Academind by Maximilian Schwarzmüller",
+      "Maximilian Schwarzmüller",
+      "웅진씽크빅 글로벌",
+    ],
+    rating: 4.8,
+    num_reviews: 555,
+    content_info: "총 23.5시간",
+    num_published_lectures: 259,
+    instructional_level: "모든 수준",
+  },
+  {
+    idx: 8,
+    title: "모던 리액트(React)와 리덕스(Redux)",
+    image_240x135: "https://img-c.udemycdn.com/course/240x135/1080152_f76d.jpg",
+    price: 23000,
+    real_price: 99000,
+    headline:
+      "NPM, Webpack, ES6 가 지원되는 앱개발 튜토리얼을 통해 리액트와 리덕스 마스터하세요!",
+    visible_instructors: ["Will Park", "블로터 아카데미KO"],
+    rating: 4.6,
+    num_reviews: 552,
+    content_info: "총 26.5시간",
+    num_published_lectures: 151,
+    instructional_level: "모든 수준",
+  },
+  {
+    idx: 9,
+    title: "【한글자막】 100일 코딩 챌린지 - Web Development 부트캠프",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4482284_7f7d_5.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      '100일 안에 여러분을 웹 개발자로 만들어 드리겠습니다. 웹 개발의 처음부터 끝까지 100일 안에 배워봅시다! "기본"에서 "고급"까지 모든 내용이 포함되어 있습니다!',
+    visible_instructors: [
+      "Academind by Maximilian Schwarzmüller",
+      "Maximilian Schwarzmüller",
+      "Manuel Lorenz",
+      "웅진씽크빅 글로벌",
+    ],
+    rating: 4.7,
+    num_reviews: 535,
+    content_info: "총 79.5시간",
+    num_published_lectures: 645,
+    instructional_level: "모든 수준",
+  },
+  {
+    idx: 10,
+    title: "누구나 쉽게 배우는 Git(깃) & Github(깃허브)",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/1034434_5d7a_3.jpg",
+    price: 27000,
+    real_price: 59000,
+    headline:
+      "Git(깃)의 기초와 Github(깃허브) 활용법을 3.5시간만에 정복해봅시다!",
+    visible_instructors: ["Ohsung Kwon"],
+    rating: 4.4,
+    num_reviews: 478,
+    content_info: "총 3.5시간",
+    num_published_lectures: 35,
+    instructional_level: "초급자 수준",
+  },
+  {
+    idx: 11,
+    title:
+      "【한글자막】 Typescript :기초부터 실전형 프로젝트까지 with React + NodeJS",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4234852_7089_3.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "Typescript의 개념과 컴파일러 작동 방식, ES6 문법, JavaScript를 Typescript에 통합, Webpack으로 개발 환경 설정, 실제 사례를 배웁니다",
+    visible_instructors: [
+      "Maximilian Schwarzmüller",
+      "Academind by Maximilian Schwarzmüller",
+      "웅진씽크빅 글로벌",
+    ],
+    rating: 4.3,
+    num_reviews: 446,
+    content_info: "총 15시간",
+    num_published_lectures: 198,
+    instructional_level: "모든 수준",
+  },
+  {
+    idx: 12,
+    title: "클린코드 자바스크립트 (2023 업데이트)",
+    image_240x135: "https://img-c.udemycdn.com/course/240x135/4253080_1e23.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "자바스크립트를 위한 코드 스타일부터 습관 그리고 클린 코드에 대해 함께 고민해보고 그 이유에 대해 탐구하고 또 학습해보는 시간을 가집니다.",
+    visible_instructors: ["Poco Jang"],
+    rating: 4.5,
+    num_reviews: 439,
+    content_info: "총 10.5시간",
+    num_published_lectures: 73,
+    instructional_level: "중급자 수준",
+  },
+  {
+    idx: 13,
+    title: "실무 프로그래밍 입문 (C#)",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/2310014_0f06_4.jpg",
+    price: 219000,
+    real_price: null,
+    headline:
+      "본 과목은 사용의 편의성 및 직관성, 그리고 성능이라는 세마리 토끼를 다 잡은 매우 훌륭한 매니지드(managed) 언어인 C#을 사용하여 모든 프로그래밍 언어에 공통되는 프로그래밍 기초지식에 대해 배워봅니다.",
+    visible_instructors: ["Pope Kim"],
+    rating: 4.8,
+    num_reviews: 437,
+    content_info: "총 32.5시간",
+    num_published_lectures: 256,
+    instructional_level: "초급자 수준",
+  },
+  {
+    idx: 14,
+    title:
+      "파이썬 Python 3 입문 - 미국 실리콘밸리 스타일의 코드로 실전 앱 개발 준비하기",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/1895374_4916_2.jpg",
+    price: 23000,
+    real_price: 99000,
+    headline:
+      "실리콘밸리의 소프트웨어 엔지니어가 Python 3 의 입문, 응용, 코드스타일을 전수합니다. 본강의에서는 최근 수요가 급증하고 있는 데이터 분석과 웹 스크래핑에도 쓰이고 있는 Python 의 기초를 다질수 있습니다",
+    visible_instructors: ["酒井 潤 (Jun Sakai)", "Haesung Hwang (황혜성)"],
+    rating: 4.1,
+    num_reviews: 426,
+    content_info: "총 28.5시간",
+    num_published_lectures: 290,
+    instructional_level: "초급자 수준",
+  },
+  {
+    idx: 15,
+    title: "☕ 블랙커피 Vanilla JS Lv1. 문벅스 카페 메뉴 앱 만들기",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4191520_162a_2.jpg",
+    price: 48000,
+    real_price: null,
+    headline: "Vanilla Javascript로 만들어보는 상태관리가 가능한 카페 메뉴 앱",
+    visible_instructors: ["Maker Jun"],
+    rating: 4.6,
+    num_reviews: 412,
+    content_info: "총 5시간",
+    num_published_lectures: 42,
+    instructional_level: "초급자 수준",
+  },
+  {
+    idx: 16,
+    title: "【한글자막】 JavaScript 완벽 가이드 : 초급 + 고급 마스터 과정",
+    image_240x135:
+      "https://img-c.udemycdn.com/course/240x135/4482286_943e_4.jpg",
+    price: 20000,
+    real_price: 88000,
+    headline:
+      "기초부터 시작하여 JS 전문가 수준까지 담은 최신 JavaScript 강의! 한 강의로 해결하는 JavaScript 웹 개발 완벽 가이드.",
+    visible_instructors: [
+      "Academind by Maximilian Schwarzmüller",
+      "Maximilian Schwarzmüller",
+      "웅진씽크빅 글로벌",
+    ],
+    rating: 4.7,
+    num_reviews: 341,
+    content_info: "총 52시간",
+    num_published_lectures: 617,
+    instructional_level: "모든 수준",
+  },
+];
+export default COURSELIST;
